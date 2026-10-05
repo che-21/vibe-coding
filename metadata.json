@@ -1,0 +1,6 @@
+{
+  "name": "Retro 3D Sky Striker - 1945 Arcade",
+  "description": "옛날 오락실 감성의 레트로 3D 비행기 슈팅 게임. Three.js 로우폴리 전투기와 탄막 슈팅, 거대 보스전, 파워업 및 폭탄 필살기 지원.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

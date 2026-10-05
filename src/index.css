@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+    background-color: #050814;
+    color: #f1f5f9;
+  }
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-tech {
+  font-family: 'Chakra Petch', monospace, sans-serif;
+}
+
+.font-hud {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* CRT Scanline Effect */
+.crt-lines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.28) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Subtle arcade phosphor vignette */
+.crt-vignette {
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.75), inset 0 0 160px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+/* Text glow styles */
+.neon-glow-cyan {
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.75), 0 0 16px rgba(6, 182, 212, 0.4);
+}
+
+.neon-glow-red {
+  text-shadow: 0 0 8px rgba(239, 68, 68, 0.8), 0 0 20px rgba(239, 68, 68, 0.5);
+}
+
+.neon-glow-yellow {
+  text-shadow: 0 0 8px rgba(234, 179, 8, 0.8), 0 0 20px rgba(234, 179, 8, 0.5);
+}
+
+@keyframes warning-flash {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.85; }
+}
+
+.animate-warning-flash {
+  animation: warning-flash 0.55s ease-in-out infinite;
+}
